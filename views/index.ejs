@@ -1,11 +1,50 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('partials/header') %>
+
+<!-- Hero banner: big yellow welcome section -->
+<section class="p-5 mb-5 bg-warning text-dark rounded-3">
+    <p class="font-monospace mb-1">// SYSTEM ONLINE · PORTFOLIO v2.0</p>
+    <h1 class="display-4 fw-bold">Hi, I'm Andrew</h1>
+    <p class="lead">Information Technology student focused on networking, security and web development.</p>
+    <a href="/projects" class="btn btn-dark btn-lg">View My Projects</a>
+</section>
+
+<!-- Three Bootstrap cards that link to the other pages.
+     col-md-4 = 4 of 12 grid columns, so three cards per row on tablets and laptops -->
+<section>
+    <h2 class="mb-4">Explore My Portfolio</h2>
+    <div class="row g-4">
+
+        <article class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title h5">About Me</h3>
+                    <p class="card-text">Learn more about me, my background and my interests.</p>
+                    <a href="/about" class="btn btn-outline-dark">Go to About Me</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title h5">Projects</h3>
+                    <p class="card-text">See my previous work in networking, programming and web development.</p>
+                    <a href="/projects" class="btn btn-outline-dark">Go to Projects</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title h5">Contact Me</h3>
+                    <p class="card-text">Have a question or opportunity? Send me a quick message.</p>
+                    <a href="/contact" class="btn btn-outline-dark">Go to Contact Me</a>
+                </div>
+            </div>
+        </article>
+
+    </div> <!-- end of row -->
+</section>
+
+<%- include('partials/footer') %>

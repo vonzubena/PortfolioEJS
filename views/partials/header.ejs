@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title is passed in from the route in routes/index.js, e.g. { title: 'About Me' } -->
+    <title><%= title %> | Andrew Von Zuben</title>
+
+    <!-- Bootstrap CSS (installed with npm, served from node_modules): layout and styling framework (required) -->
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Free (installed with npm, served from node_modules): icon library (required) -->
+    <link href="/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- My own styles, from public/Content/app.css -->
+    <link href="/Content/app.css" rel="stylesheet">
+    <!-- My own script, from public/Script/app.js -->
+    <script src="/Script/app.js"></script>
+</head>
+<body>
+
+    <!-- HEADER: Bootstrap navbar, shared by every page -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">Andrew Von Zuben</a>
+
+                <!-- Menu button that appears on small screens (part of Bootstrap's navbar) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Ternary operator (Chapter 8): if the title matches, add the "active" class to highlight the current page -->
+                        <li class="nav-item"><a class="nav-link <%= title == 'Home' ? 'active' : '' %>" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link <%= title == 'About Me' ? 'active' : '' %>" href="/about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link <%= title == 'Projects' ? 'active' : '' %>" href="/projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link <%= title == 'Contact Me' ? 'active' : '' %>" href="/contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Each page's own content goes between the header and the footer -->
+    <main class="container my-5">

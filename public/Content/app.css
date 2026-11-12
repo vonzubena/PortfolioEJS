@@ -1,8 +1,25 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* app.css - my own small additions on top of Bootstrap
+   Bootstrap handles the layout, grid, navbar, cards, buttons and forms. */
+
+/* Whole page: light grey background so the white cards stand out */
+body
+{
+    background-color: #F4F4F6;
 }
 
-a {
-  color: #00B7FF;
+/* Footer links: no underline, turn yellow when hovered */
+footer a
+{
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color: #FCEE0A;
+}
+
+/* Video never grows wider than 640px, but still shrinks on small screens */
+video
+{
+    max-width: 640px;
 }

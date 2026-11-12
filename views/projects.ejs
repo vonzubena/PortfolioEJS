@@ -1,0 +1,56 @@
+<%- include('partials/header') %>
+
+<h1>Projects</h1>
+<p class="lead mb-4">Here are some projects I've worked on.</p>
+
+<!-- Each project is an article inside a Bootstrap card. col-md-6 col-lg-4 = 2 per row on tablets, 3 per row on laptops, 1 per row on phones -->
+
+<div class="row g-4">
+    <article class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <p class="text-danger font-monospace small mb-1">// Networking</p>
+                <h2 class="card-title h5">Small Office Network Design</h2>
+                <p class="card-text">Designed a network for a 25-person office in Cisco Packet Tracer, with separate
+                    VLANs for staff, management and guests, DHCP, inter-VLAN routing and WPA2 wireless.</p>
+
+            </div>
+        </div>
+    </article>
+
+    <article class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <p class="text-danger font-monospace small mb-1">// Programming</p>
+                <h2 class="card-title h5">Command-Line Banking App</h2>
+                <p class="card-text">Built a Python banking app where users create accounts, deposit, withdraw and
+                    transfer funds. Data is saved to JSON files, and input is validated to prevent overdrafts.</p>
+            </div>
+        </div>
+    </article>    
+
+    <article class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <p class="text-danger font-monospace small mb-1">// Object-Oriented Programming</p>
+                <h2 class="card-title h5">Hospital Appointment System</h2>
+                <p class="card-text">Developed a Python hospital system using classes, inheritance and encapsulation
+                    to model patients, doctors and appointments that users book through a menu.</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <p class="text-danger font-monospace small mb-1">// Web Development</p>
+                <h2 class="card-title h5">Express Portfolio Website</h2>
+                <p class="card-text">Built this portfolio with Node.js, Express and EJS templates, styled with
+                    Bootstrap and deployed to the cloud.</p>
+            </div>
+        </div>
+    </article> 
+
+</div>
+
+<%- include('partials/footer') %>

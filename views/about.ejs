@@ -5,20 +5,64 @@
 <article class="row g-4 mb-5">
     
     <figure class="col-md-4 text-center">
-        <img src="/Assets/profile.jpg" class="img-fuild rounded" alt="Photo of me :)"
+        <img src="/Assets/profile.jpg" class="img-fluid rounded" alt="Photo of me :)">
         <figcaption class="mt-2 fw-bold">Andrew Von Zuben</figcaption>
     </figure>
-    <div clas="col-md-8">
+    <div class="col-md-8">
         <h2>Hello There</h2>
         <p>My name is Andrew Von Zuben, and I am a student at Ontario Tech University pursuing a degree in
             Information Technology. I have a strong interest in networking, security and web development.
             This portfolio showcases my skills, projects and experiences in these areas.</p>
-
+        
+        <aside class="card">
+            <div class="card-body">
+                <h3 class="card-title h5">Quick Facts</h3>
+                <ul class="mb-0">
+                    <li>Degree: Information Technology</li>
+                    <li>University: Ontario Tech University</li>
+                    <li>Interests: Networking, Security, Web Development</li>
+                </ul>
+            </div>
+        </aside>
     </div>
-
-
-
 </article>
+
+
+<!-- Skills shown as Bootstrap badges -->
+<section class="mb-5">
+    <h2>Skills</h2>
+    <ul class="list-inline">
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">HTML</li>
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">CSS</li>
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">JavaScript</li>
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">Python</li>
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">Object-Oriented Programming</li>
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">Cyber Security</li>
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">Linux Administration</li>
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">AWS</li>
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">English</li>
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">French</li>
+        <li class="list-inline-item badge bg-dark fs-6 mb-2">Portuguese</li>
+    </ul>
+</section>
+
+<!-- Video introduction -->
+<section>
+    <h2>Video Introduction</h2>
+    <p>Here is a short video introducing myself.</p>
+
+    <video id="video" class="w-100 rounded" controls poster="/Assets/video-poster.jpg">
+        <source src="/Assets/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <!-- Button that runs playPause() in public/Script/video.js -->
+    <button class="btn btn-warning mt-3" onclick="playPause()">Play/Pause</button>
+</section>
+
+<!-- Play/pause script from the Week 2 lecture -->
+<script src="/Script/video.js"></script>
+
 
 
 

@@ -1,0 +1,77 @@
+<%- include('partials/header') %>
+
+<h1 class="mb-4">Contact Me</h1>
+
+<div class="row g-4">
+
+    <!-- Contact form (Week 2): opens the visitor's email app with their message (mailto) -->
+    <section class="col-lg-8">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title h4">Send me a Message</h2>
+
+                <form action="mailto:andrew.vonzuben@ontariotechu.net" method="post" enctype="text/plain" name="contact">
+
+                    <!-- Each label's "for" matches its input's id, so clicking the label selects the box.
+                         required = the form will not send until the field is filled in -->
+                    <p>
+                        <label for="name" class="form-label">Full Name</label>
+                        <input class="form-control" type="text" id="name" name="name" placeholder="e.g. Jane Doe" maxlength="50" required>
+                    </p>
+
+                    <!-- type="email" makes the browser check the address has an @ -->
+                    <p>
+                        <label for="email" class="form-label">Email</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="e.g. jane.doe@example.com" maxlength="100" required>
+                    </p>
+
+                    <!-- type="tel" shows a number keypad on phones -->
+                    <p>
+                        <label for="phone" class="form-label">Cell Number</label>
+                        <input class="form-control" type="tel" id="phone" name="phone" placeholder="e.g. 416-555-5555">
+                    </p>
+
+                    <!-- Drop-down menu; the empty first option forces the visitor to pick one -->
+                    <p>
+                        <label for="subject" class="form-label">Reason for Contacting</label>
+                        <select class="form-select" id="subject" name="subject" required>
+                            <option value="">Please Choose One</option>
+                            <option value="job">Job or Internship Opportunity</option>
+                            <option value="project">Project Collaboration</option>
+                            <option value="question">General Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <!-- maxlength stops the message going over 500 characters -->
+                    <p>
+                        <label for="comments" class="form-label">Comments</label>
+                        <textarea class="form-control" id="comments" name="comments" rows="6" placeholder="Write your message here" maxlength="500" required></textarea>
+                    </p>
+
+                    <!-- Submit sends the form; Reset clears every field -->
+                    <p>
+                        <input class="btn btn-dark" type="submit" value="Send Message">
+                        <input class="btn btn-outline-secondary" type="reset" value="Clear Form">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side box with other ways to reach me -->
+    <aside class="col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title h4">Other Ways to Reach Me</h2>
+                <p>I usually reply within two business days.</p>
+                <address class="mb-0">
+                    Email: <a href="mailto:andrew.vonzuben@ontariotechu.net">andrew.vonzuben@ontariotechu.net</a>
+                </address>
+            </div>
+        </div>
+    </aside>
+
+</div> <!-- end of row -->
+
+<%- include('partials/footer') %>

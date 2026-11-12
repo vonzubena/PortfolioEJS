@@ -1,15 +1,103 @@
-/* app.css - my own small additions on top of Bootstrap
-   Bootstrap handles the layout, grid, navbar, cards, buttons and forms. */
+/* app.css - my own additions on top of Bootstrap
+   Bootstrap handles the layout, grid, navbar, cards, buttons and forms.
+   This file swaps Bootstrap's colours for my Assignment 1 cyberpunk palette:
+   FCEE0A yellow, 00F0FF cyan, FF003C red, 0A0A0F black, 12121C dark grey.
+   It loads after Bootstrap in header.ejs, so these rules win. */
 
-/* Whole page: light grey background so the white cards stand out */
-body
+/* Bootstrap colour variables: replacing these changes every Bootstrap class
+   that uses them (bg-warning, text-danger, bg-dark, links, page background) */
+:root,
+[data-bs-theme=dark]
 {
-    background-color: #F4F4F6;
+    --bs-body-bg: #0A0A0F;
+    --bs-body-color: #E8E8F0;
+    --bs-dark-rgb: 18, 18, 28;
+    --bs-warning-rgb: 252, 238, 10;
+    --bs-info-rgb: 0, 240, 255;
+    --bs-danger-rgb: 255, 0, 60;
+    --bs-link-color-rgb: 0, 240, 255;
+    --bs-link-hover-color-rgb: 252, 238, 10;
+    --bs-border-color: #2A2A3A;
+    --bs-heading-color: #FCEE0A;    /* all headings yellow, like Assignment 1 */
 }
 
-/* Footer links: no underline, turn yellow when hovered */
+/* The hero banner is yellow, so its heading stays black */
+.bg-warning h1
+{
+    color: #0A0A0F;
+}
+
+/* Cards: dark grey panels with a yellow left edge and a thin cyan bottom line */
+.card
+{
+    --bs-card-bg: #12121C;
+    border-left: 5px solid #FCEE0A;
+    border-bottom: 1px solid #00F0FF;
+}
+
+/* Navbar and footer: yellow line on the edge facing the page */
+.navbar
+{
+    border-bottom: 2px solid #FCEE0A;
+}
+
+footer
+{
+    border-top: 2px solid #FCEE0A;
+}
+
+/* Yellow buttons (Play/Pause) use my yellow instead of Bootstrap's */
+.btn-warning
+{
+    --bs-btn-bg: #FCEE0A;
+    --bs-btn-border-color: #FCEE0A;
+    --bs-btn-hover-bg: #00F0FF;
+    --bs-btn-hover-border-color: #00F0FF;
+}
+
+/* Outline buttons on the dark cards ("Go to ..."): yellow outline, fill yellow when hovered */
+.btn-outline-dark
+{
+    --bs-btn-color: #FCEE0A;
+    --bs-btn-border-color: #FCEE0A;
+    --bs-btn-hover-color: #0A0A0F;
+    --bs-btn-hover-bg: #FCEE0A;
+    --bs-btn-hover-border-color: #FCEE0A;
+}
+
+/* Send button on the contact form: solid yellow, cyan when hovered */
+.card .btn-dark
+{
+    --bs-btn-color: #0A0A0F;
+    --bs-btn-bg: #FCEE0A;
+    --bs-btn-border-color: #FCEE0A;
+    --bs-btn-hover-color: #0A0A0F;
+    --bs-btn-hover-bg: #00F0FF;
+    --bs-btn-hover-border-color: #00F0FF;
+}
+
+/* Clear button: cyan outline */
+.btn-outline-secondary
+{
+    --bs-btn-color: #00F0FF;
+    --bs-btn-border-color: #00F0FF;
+    --bs-btn-hover-color: #0A0A0F;
+    --bs-btn-hover-bg: #00F0FF;
+    --bs-btn-hover-border-color: #00F0FF;
+}
+
+/* Skill badges: cyan border with a thick yellow left edge, like my Assignment 1 skill chips */
+.badge.bg-dark
+{
+    color: #FCEE0A;
+    border: 1px solid #00F0FF;
+    border-left: 4px solid #FCEE0A;
+}
+
+/* Footer links: light text, no underline, yellow when hovered */
 footer a
 {
+    color: #E8E8F0;
     text-decoration: none;
 }
 
@@ -18,8 +106,10 @@ footer a:hover
     color: #FCEE0A;
 }
 
-/* Video never grows wider than 640px, but still shrinks on small screens */
+/* Video: never wider than 640px, cyan border with a glow like Assignment 1 */
 video
 {
     max-width: 640px;
+    border: 2px solid #00F0FF;
+    box-shadow: 0px 0px 18px #00F0FF;
 }

@@ -5,7 +5,7 @@
 My personal portfolio website rebuilt with **Node.js**, **Express** and the **EJS** templating engine.
 It is styled with **Bootstrap 5** and **Font Awesome Free**, using my Assignment 1 cyberpunk colours.
 
-- **Live site:** [No link yet]
+- **Live site:** [https://andrew-portfolio-pyvn.onrender.com/]
 - **Repository:** https://github.com/vonzubena/PortfolioEJS
 
 ---
@@ -105,7 +105,7 @@ portfolioEJS/
 
 ---
 
-## External Code (10% Rule)
+## External Code
 
 Code not covered in the course is marked `EXTRA` in comments:
 
@@ -117,7 +117,7 @@ Code not covered in the course is marked `EXTRA` in comments:
 | `data-bs-theme="dark"` | `header.ejs` | Bootstrap's dark mode (readable form placeholders) | 1 |
 | **Total** | | | **34** |
 
-**34 lines ÷ 534 lines of code ≈ 6.4%**
+**34 lines ÷ 534 lines of code ≈ 6.4%**, under the 10% limit.
 
 ---
 
@@ -130,12 +130,13 @@ Code not covered in the course is marked `EXTRA` in comments:
 - **Bootstrap 5.3** – CSS framework (grid, navbar, cards, buttons, forms, dark mode, CSS variables).
   https://getbootstrap.com/
 - **Font Awesome Free** – icon library. https://fontawesome.com/
-- **Overriding Bootstrap styles** (method shared in class)
+- **Overriding Bootstrap styles** (method shared in class) –
   https://stackoverflow.com/questions/20721248/how-can-i-override-bootstrap-css-styles
 - **Bootstrap CSS variables** – https://getbootstrap.com/docs/5.3/customize/css-variables/
 - **video.js** – play/pause function from the INFR3120 Week 2 lecture ("Using JavaScript Controls").
 - **Script/app.js** – IIFE start-up script from the INFR3120 class Express demo.
 - **Profile photo** – my own.
+
 
 ---
 

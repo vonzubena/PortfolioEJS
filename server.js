@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+// server.js: moved from bin/www (class method). Starts the server on port 3000 or the host's PORT.
+
 /**
  * Module dependencies.
  */

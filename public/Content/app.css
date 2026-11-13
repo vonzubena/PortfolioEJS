@@ -4,7 +4,8 @@
    FCEE0A yellow, 00F0FF cyan, FF003C red, 0A0A0F black, 12121C dark grey.
    It loads after Bootstrap in header.ejs, so these rules win. */
 
-/* Bootstrap colour variables: replacing these changes every Bootstrap class
+/* EXTRA (see README): CSS variables are not from the course slides.
+   Bootstrap colour variables: replacing these changes every Bootstrap class
    that uses them (bg-warning, text-danger, bg-dark, links, page background) */
 :root,
 [data-bs-theme=dark]
@@ -30,7 +31,7 @@
 /* Cards: dark grey panels with a yellow left edge and a thin cyan bottom line */
 .card
 {
-    --bs-card-bg: #12121C;
+    --bs-card-bg: #12121C;    /* EXTRA */
     border-left: 5px solid #FCEE0A;
     border-bottom: 1px solid #00F0FF;
 }
@@ -47,7 +48,7 @@ footer
 }
 
 /* Yellow buttons (Play/Pause) use my yellow instead of Bootstrap's */
-.btn-warning
+.btn-warning /* EXTRA: Bootstrap button variables */
 {
     --bs-btn-bg: #FCEE0A;
     --bs-btn-border-color: #FCEE0A;
@@ -56,7 +57,7 @@ footer
 }
 
 /* Outline buttons on the dark cards ("Go to ..."): yellow outline, fill yellow when hovered */
-.btn-outline-dark
+.btn-outline-dark /* EXTRA: Bootstrap button variables */
 {
     --bs-btn-color: #FCEE0A;
     --bs-btn-border-color: #FCEE0A;
@@ -66,7 +67,7 @@ footer
 }
 
 /* Send button on the contact form: solid yellow, cyan when hovered */
-.card .btn-dark
+.card .btn-dark /* EXTRA: Bootstrap button variables */
 {
     --bs-btn-color: #0A0A0F;
     --bs-btn-bg: #FCEE0A;
@@ -77,7 +78,7 @@ footer
 }
 
 /* Clear button: cyan outline */
-.btn-outline-secondary
+.btn-outline-secondary /* EXTRA: Bootstrap button variables */
 {
     --bs-btn-color: #00F0FF;
     --bs-btn-border-color: #00F0FF;
@@ -92,18 +93,6 @@ footer
     color: #FCEE0A;
     border: 1px solid #00F0FF;
     border-left: 4px solid #FCEE0A;
-}
-
-/* Footer links: light text, no underline, yellow when hovered */
-footer a
-{
-    color: #E8E8F0;
-    text-decoration: none;
-}
-
-footer a:hover
-{
-    color: #FCEE0A;
 }
 
 /* Video: never wider than 640px, cyan border with a glow like Assignment 1 */

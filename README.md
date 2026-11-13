@@ -136,7 +136,6 @@ Code not covered in the course is marked `EXTRA` in comments:
 - **video.js** – play/pause function from the INFR3120 Week 2 lecture ("Using JavaScript Controls").
 - **Script/app.js** – IIFE start-up script from the INFR3120 class Express demo.
 - **Profile photo** – my own.
-- **Intro video** – my own.
 
 ---
 

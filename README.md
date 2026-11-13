@@ -5,7 +5,7 @@
 My personal portfolio website rebuilt with **Node.js**, **Express** and the **EJS** templating engine.
 It is styled with **Bootstrap 5** and **Font Awesome Free**, using my Assignment 1 cyberpunk colours.
 
-- **Live site:** [https://andrew-portfolio-pyvn.onrender.com/]
+- **Live site:** https://andrew-portfolio-pyvn.onrender.com/
 - **Repository:** https://github.com/vonzubena/PortfolioEJS
 
 ---
